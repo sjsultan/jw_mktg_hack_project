@@ -29,12 +29,31 @@ Run `/ask-kim [your question]` anytime. Claude searches `#vp-context-feed` for r
 
 ---
 
+## Dummy data — VP roster
+
+10 weeks of briefs (Mar 2 – May 5, 2026) for each VP, with interconnected narratives across the team.
+
+| VP | Title | Brief prefix | Narrative arc |
+|----|-------|-------------|---------------|
+| Kimberly Ryneska | Sr. Director, Brand Marketing | `kim-brief-` | LinkedIn deprioritization → UGC greenlit → brand narrative → influencer pilot |
+| Catherine Crevels | Chief Marketing Officer | `catherine-brief-` | FY27 strategy → board prep → LinkedIn approval → Q3 planning |
+| Ted Babcock | VP, Growth Marketing | `ted-brief-` | H1 targets → Meta vs LinkedIn audit → Q2 recovery → influencer as new channel |
+| Jamie Joyce | Sr. Director, Strategic Communication | `jamie-brief-` | Exec thought leadership → analyst briefings → LinkedIn comms → May 15 launch PR |
+| Rachita Paes | VP, Product Marketing | `rachita-brief-` | May 15 GTM → ICP refresh → sales enablement → Gartner inclusion → launch readiness |
+
+Briefs live in `data/briefs/`. Cross-VP references are intentional — the LinkedIn decision, brand narrative, and product launch all appear from multiple perspectives.
+
+---
+
 ## Files
 
 | File | Purpose |
 |------|---------|
 | `vp-brief.md` | Claude skill — VP runs this to generate and post their brief |
 | `ic-query.md` | Claude skill — IC runs this to ask questions against VP briefs |
+| `demo-narrative.md` | 5-minute demo script with FAQ |
+| `data/briefs/` | 50 weeks of dummy briefs across 5 VPs |
+| `data/ic-query-examples.md` | Sample IC questions and expected answers |
 
 ---
 
