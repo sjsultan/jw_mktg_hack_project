@@ -1,0 +1,129 @@
+{
+  "id": "bd55754a-3bf9-446c-bf95-ef4b88f2f6b6",
+  "name": "Hackathon: Second Brain / AI Knowledge Bot",
+  "objective": "Build function-specific AI 'second brain' bots that allow team members to query meeting transcripts, Granola notes, and Slack conversations to quickly access decisions, context, and perspectives from senior leaders and cross-functional meetings \u2014 reducing information bottlenecks and the need to interrupt busy team members for status updates.",
+  "audience": {
+    "description": "Internal B2B SaaS marketing team members who need access to decisions and context from meetings they did not attend. Primary users are IC-level and mid-level team members querying upward; initial focus on brand marketing function.",
+    "segments": [
+      "Brand marketing team members (e.g. users who would query a 'KimBot' or brand marketing Slack channel bot)",
+      "PMM team members (Rashida's function)",
+      "Lizzy's team / business unit",
+      "Senior-level VP and executive stakeholders whose meeting content feeds the bot (e.g. Kim)",
+      "Any function that adopts a dedicated bot channel (e.g. 'Lizzy bar', 'brand marketing channel')"
+    ],
+    "source": "Hackathon meeting transcript"
+  },
+  "messaging": {
+    "pillars": [
+      {
+        "pillar": "Clarifying information access",
+        "variants": [
+          "Stop asking people for updates they've already discussed \u2014 query the bot first",
+          "Get clarity on where decisions have landed without waiting for a person to be free",
+          "Ask the bot before interrupting Kim or Lizzy \u2014 it's step one before going to the actual person"
+        ]
+      },
+      {
+        "pillar": "Function-specific knowledge, not personality-based",
+        "variants": [
+          "Organized by team function (e.g. brand, PMM) rather than individual personality for broader trust and utility",
+          "Baked-in memory includes team charters, strategic pillars, and principles (e.g. Rashida's PMM charter)"
+        ]
+      },
+      {
+        "pillar": "Guardrails and ethics",
+        "variants": [
+          "The bot knows when to say 'I don't have that information \u2014 you should speak to Kim directly'",
+          "Proper guardrails on sensitive information; bot understands what to share vs. escalate",
+          "Ethics and safety principles embedded in bot behavior"
+        ]
+      },
+      {
+        "pillar": "Simplicity of interaction",
+        "variants": [
+          "Low-tech entry point via Slack channel \u2014 accessible to all levels of the team",
+          "Bot replies in-thread so conversations stay organized",
+          "Works like a triage layer before escalating to a human"
+        ]
+      }
+    ],
+    "tone": "Practical, straightforward, internally focused \u2014 clarity and efficiency over formality"
+  },
+  "channels": [
+    {
+      "type": "Slack",
+      "strategy": "Deploy function-specific bot channels (e.g. a brand marketing Slack channel, a 'Lizzy bar' channel) where team members can ask the bot questions in natural language and receive threaded replies. Claude/AI sends daily or weekly summaries per function/VP. Each channel is scoped to its function and not cross-visible.",
+      "assets": [
+        "Function-specific Slack bot channels (e.g. brand marketing channel)",
+        "Daily/weekly automated summary posts per VP or function",
+        "Threaded Q&A replies from bot"
+      ]
+    },
+    {
+      "type": "Granola (meeting notes integration)",
+      "strategy": "Ingest Granola meeting transcripts and notes as the primary data source for the bot's knowledge base, enabling queries against recorded decisions and discussions.",
+      "assets": [
+        "Granola meeting transcripts",
+        "Auto-ingested notes from relevant cross-functional meetings"
+      ]
+    },
+    {
+      "type": "Slack conversation history",
+      "strategy": "Pull relevant Slack channel conversations (ongoing projects, relevant threads) as a secondary data source for the bot's memory.",
+      "assets": [
+        "Relevant Slack channel archives",
+        "Project-related thread histories"
+      ]
+    }
+  ],
+  "creative": {
+    "concepts": [
+      "Function-specific Slack bot ('KimBot' for brand marketing, 'Lizzy bar' for Lizzy's team) that answers clarifying questions about decisions and meeting outcomes",
+      "Memory layer baked with team charters and strategic pillars (e.g. Rashida's PMM charter) so the bot answers in the context of team principles",
+      "Triage model: bot either answers the question or explicitly tells the user to go speak to the relevant person directly",
+      "Modular structure so the same bot infrastructure can be replicated across functions (brand, PMM, etc.)"
+    ],
+    "assets": [
+      "PMM charter (authored by Rashida) \u2014 to be embedded in bot memory",
+      "Meeting transcripts from Granola",
+      "Slack channel conversation archives"
+    ],
+    "status": "draft"
+  },
+  "operations": {
+    "budget": "",
+    "timeline": "FY27 brand campaign referenced as near-term use case; hackathon context implies short-term prototype",
+    "campaign_name": "Hackathon: Second Brain AI Bot by Function",
+    "requirements": [
+      "Ingest Granola meeting transcripts per function/VP",
+      "Ingest relevant Slack channel conversations",
+      "Build memory layer including team charters and strategic pillars (e.g. Rashida's PMM charter)",
+      "Deploy as function-scoped Slack bot channels (not cross-visible by default)",
+      "Bot must know when to answer vs. when to redirect user to speak to the person directly",
+      "Implement ethics and safety guardrails on information sharing",
+      "Determine which meeting types should always be excluded from bot ingestion",
+      "Support simple natural-language Q&A with threaded replies in Slack",
+      "Modular structure replicable across functions (brand, PMM, Lizzy's team, etc.)",
+      "Consider co-worker/skill infrastructure for knowing where to look for information"
+    ]
+  },
+  "governance": {
+    "checks_passed": false,
+    "issues": [
+      "Ethics and safety principles not yet defined \u2014 need explicit guardrails on what information the bot can and cannot share",
+      "No decision yet on which meeting types should be excluded from ingestion",
+      "Access controls not defined \u2014 who can query which function's bot",
+      "Guardrails for when bot should defer to a human not yet implemented",
+      "Need to consult with a relevant stakeholder (e.g. Kim, Rashida, Lizzy) on use cases and acceptable queries before build",
+      "Privacy implications of ingesting meeting transcripts and Slack conversations not reviewed"
+    ]
+  },
+  "outputs": {
+    "confluence_url": "",
+    "asana_project_id": ""
+  },
+  "metadata": {
+    "created_by": "",
+    "last_updated": "2026-05-05T18:15:06.083976+00:00"
+  }
+}
