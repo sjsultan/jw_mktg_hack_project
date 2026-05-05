@@ -8,6 +8,31 @@
 
 ---
 
+## Flow
+
+```mermaid
+flowchart LR
+    Granola[Granola<br/>meeting notes]
+    SlackVP[VP's Slack<br/>messages]
+    VP([VP])
+    Brief[/vp-brief skill/]
+    Channel[(#mkt-vp-context-feed)]
+    Query[/ask-kim skill/]
+    Digest[/vp-digest skill/]
+    IC([IC])
+
+    Granola --> Brief
+    SlackVP --> Brief
+    Brief -->|approve gate| VP
+    VP -->|posts| Channel
+    Channel --> Query
+    Channel --> Digest
+    Query --> IC
+    Digest -->|posts back| Channel
+```
+
+---
+
 ## How it works
 
 ### For VPs — `/vp-brief`
@@ -41,6 +66,8 @@ See [`examples/`](./examples/) for sample briefs the demo runs against.
 | `vp-brief.md` | Claude skill — VP runs this to generate and post their brief |
 | `ic-query.md` | Claude skill — IC runs this to ask questions against VP briefs |
 | `vp-digest.md` | Claude skill — anyone runs this to get a cross-VP weekly digest |
+| `CONVENTIONS.md` | Brief format contract — what shape briefs must follow |
+| `DEMO.md` | Friday demo walkthrough script |
 | `examples/` | Sample briefs (Kim Ryneska) showing what good output looks like |
 
 ---
