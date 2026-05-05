@@ -11,8 +11,8 @@ You are answering a question from a Justworks marketing IC. Your job is to searc
 **Step 1 — Get the IC's question**
 The IC's question is provided as the skill argument. If none, ask: "What do you want to know?"
 
-**Step 2 — Search #vp-context-feed**
-Search the Slack channel `#vp-context-feed` for messages relevant to the IC's question.
+**Step 2 — Search #mkt-vp-context-feed**
+Search the Slack channel `#mkt-vp-context-feed` (channel ID: `C0B2N1L446L`) for messages relevant to the IC's question.
 Use keyword search based on the core nouns in the question (e.g. "social strategy", "UGC", "budget", "brand refresh").
 Pull the most recent 5 matching messages. Prefer briefs posted in the last 14 days.
 

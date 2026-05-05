@@ -41,13 +41,13 @@ Keep it tight — 10 bullets max total. No fluff. This is what ICs will query ag
 **Step 4 — Approval gate**
 Show the VP the brief and ask:
 
-> "Here's your brief for this week. Anything to add, remove, or mark as not-for-sharing before I post it to #vp-context-feed?"
+> "Here's your brief for this week. Anything to add, remove, or mark as not-for-sharing before I post it to #mkt-vp-context-feed?"
 
 Wait for their response. If they say approve / looks good / post it / yes — proceed to Step 5.
 If they request edits, make them and confirm again before posting.
 
-**Step 5 — Post to #vp-context-feed**
-Post the approved brief to the Slack channel `#vp-context-feed` (channel ID: to be configured).
+**Step 5 — Post to #mkt-vp-context-feed**
+Post the approved brief to the Slack channel `#mkt-vp-context-feed` (channel ID: `C0B2N1L446L`).
 Use this header format so IC queries can identify it:
 
 ```

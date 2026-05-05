@@ -11,12 +11,12 @@
 ## How it works
 
 ### For VPs — `/vp-brief`
-Run `/vp-brief` at the end of your day or week. Claude pulls your Granola meeting notes and recent Slack activity, synthesizes them into a structured brief (decisions, priorities, open items), and asks you to approve before posting to `#vp-context-feed`.
+Run `/vp-brief` at the end of your day or week. Claude pulls your Granola meeting notes and recent Slack activity, synthesizes them into a structured brief (decisions, priorities, open items), and asks you to approve before posting to `#mkt-vp-context-feed`.
 
 You control what goes out. Nothing posts without your approval.
 
 ### For ICs — `/ask-kim`
-Run `/ask-kim [your question]` anytime. Claude searches `#vp-context-feed` for relevant VP briefs and answers your question with a citation. If the answer isn't there, it tells you who to ask and how.
+Run `/ask-kim [your question]` anytime. Claude searches `#mkt-vp-context-feed` for relevant VP briefs and answers your question with a citation. If the answer isn't there, it tells you who to ask and how.
 
 ---
 
@@ -40,7 +40,7 @@ Run `/ask-kim [your question]` anytime. Claude searches `#vp-context-feed` for r
 
 ## Setup (to productionize)
 
-1. Create `#vp-context-feed` Slack channel
+1. Slack channel `#mkt-vp-context-feed` (channel ID: `C0B2N1L446L`) — already created
 2. Install both skills in Claude Code (`~/.claude/commands/`)
 3. Onboard VPs — each runs `/vp-brief` at end of week
 4. ICs use `/ask-kim` anytime
